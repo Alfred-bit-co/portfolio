@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alfred AYITOU | Full-stack Developer & UI/UX Designer</title>
+    <meta name="description" content="Développeur Full-stack & Designer UI/UX spécialisé en création d'expériences numériques innovantes et intuitives. Basé à Lomé, Togo.">
+    <meta name="keywords" content="Développeur Full-stack, UI/UX Designer, Développement Web, javaScript, ReactJS, Python, PHP, Figma, Togo">
+    <meta name="author" content="Alfred AYITOU">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Alfred AYITOU | Full-stack Developer & UI/UX Designer">
+    <meta property="og:description" content="Je transforme des idées en expériences numériques exceptionnelles">
+    <meta property="og:type" content="website">
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="logo">A</span>
+                <span class="logo-text">AYITOU</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="nav-link active">Accueil</a></li>
+                <li><a href="#about" class="nav-link">À Propos</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#experience" class="nav-link">Expérience</a></li>
+                <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-contact">
+                <a href="#contact" class="btn btn-small btn-primary">Disponible</a>
+            </div>
+            <button class="mobile-menu-btn" id="menuToggle" aria-label="Menu mobile">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text-box">
+                    <h1 class="hero-subtitle">Bonjour, je suis</h1>
+                    <h2 class="hero-name">Alfred <span class="highlight">AYITOU</span></h2>
+                    <div class="typewriter-container">
+                        <p class="job-title" id="typewriter">Développeur web orienté IA, Architect d'Agent IA </p>
+                    </div>
+                    <p class="hero-description">
+                        Je transforme des idées en expériences numériques exceptionnelles.
+                        Spécialisé en développement web et design UI/UX avec 2+ ans d'expérience.
+                        je créer , je test, j'entraine et j'emplémente des IA dans les site et applications que je consoit.
+                    </p>
+                    <div class="hero-btns">
+                        <a href="#portfolio" class="btn btn-primary">
+                            Voir mes projets
+                        </a>
+                        <a href="#contact" class="btn btn-outline">
+                            Discutons
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-photo-container">
+                    <div class="image-container">
+                        <img src="Alfred.png" alt="Photo de profil d'Alfred AYITOU" class="profile-photo">
+                    </div>
+                    <div class="profile-badge">
+                        <span>2+ ans d'expérience</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <h3 class="stat-number" data-count="25">0</h3>
+                    <p>Projets réalisés</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-count="3/5">0</h3>
+                    <p>Clients satisfaits</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-count="3">0</h3>
+                    <p>Technologies maîtrisées</p>
+                </div>
+                <div class="stat-card">
+                    <h3 class="stat-number" data-count="100">0</h3>
+                    <p>Engagement qualité</p>
+                </div>
+            </div>
+        </div>
+   
+        <div class="scroll-indicator" id="scrollIndicator">
+            <i data-lucide="mouse-pointer"></i>
+            <span>Défiler</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Expertise technique</span>
+                <h2 class="section-title">Solutions Digitales sur Mesure</h2>
+                <p class="section-description">
+                    Architecte de solutions digitales combinant excellence technique et design intuitif
+                </p>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-content">
+                    <h3>Transformer des visions en réalité numérique</h3>
+                    <p>
+                        Passionné par l'innovation numérique, je conçois et développe des solutions web et mobiles performantes. Mon expertise couvre l'ensemble du cycle de développement, de la conception UX/UI au déploiement en production.
+                    </p>
+                    
+                    <div class="about-values">
+                        <div class="value-item">
+                            <i data-lucide="target"></i>
+                            <h4>Architecture Scalable</h4>
+                            <p>Solutions techniques évolutives et maintenables</p>
+                        </div>
+                        <div class="value-item">
+                            <i data-lucide="shield"></i>
+                            <h4>Code Sécurisé</h4>
+                            <p>Applications robustes avec bonnes pratiques de sécurité</p>
+                        </div>
+                        <div class="value-item">
+                            <i data-lucide="zap"></i>
+                            <h4>Performance Optimale</h4>
+                            <p>Applications rapides et optimisées pour tous les devices</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Stack technique -->
+                    <div class="tech-stack">
+                        <h4>Stack Technique Principal</h4>
+                        <div class="stack-tags">
+                            <span class="stack-tag">JavaScript</span>
+                            <span class="stack-tag">Python</span>
+                            <span class="stack-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skills-container">
+                    <div class="skills-card">
+                        <h3 class="skills-title">Compétences Techniques</h3>
+                        
+                        <div class="skill-category">
+                            <h4>Frontend</h4>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>HTML/CSS</span>
+                                    <span>45%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="45"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>JavaScript/React</span>
+                                    <span>20%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="20"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Backend</h4>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Python/PHP</span>
+                                    <span>15%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="15"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Base de données</span>
+                                    <span>23%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="23"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="skill-category">
+                            <h4>Design</h4>
+                            <div class="skill-item">
+                                <div class="skill-info">
+                                    <span>Figma</span>
+                                    <span>24%</span>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-width="24"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Ce que je fais</span>
+                <h2 class="section-title">Mes Services Spécialisés</h2>
+                <p class="section-description">
+                    Des solutions complètes pour transformer vos idées en produits digitaux performants
+                </p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <h3>Développement Web</h3>
+                    <p>Création d'applications web modernes, responsive et performantes avec les dernières technologies.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> Sites vitrines & e-commerce</li>
+                        <li><i data-lucide="check"></i> Applications web complexes</li>
+                        <li><i data-lucide="check"></i> Intégration API & services</li>
+                        <li><i data-lucide="check"></i> Création et entraînement des modèles IA</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="layout"></i>
+                    </div>
+                    <h3>UI/UX Design</h3>
+                    <p>Conception d'interfaces intuitives et d'expériences utilisateur engageantes pour vos produits digitaux.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> Design d'interface moderne</li>
+                        <li><i data-lucide="check"></i> Prototypage interactif</li>
+                        <li><i data-lucide="check"></i> Tests utilisateurs</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="bar-chart"></i>
+                    </div>
+                    <h3>Consulting Tech</h3>
+                    <p>Accompagnement stratégique pour optimiser vos projets digitaux et adopter les bonnes technologies.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> Audit technique</li>
+                        <li><i data-lucide="check"></i> Architecture solution</li>
+                        <li><i data-lucide="check"></i> Formation équipe</li>
+                    </ul>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i data-lucide="layout"></i>
+                    </div>
+                    <h3>IA</h3>
+                    <p>intégration d'intélligence artificiel dans vos projets.</p>
+                    <ul class="service-features">
+                        <li><i data-lucide="check"></i> application gérée à 100% par l'IA</li>
+                        <li><i data-lucide="check"></i> Création des modèles intelligents</li>
+                        <li><i data-lucide="check"></i> Optimiser et améliorer les modèles d'IA</li>
+                        <li><i data-lucide="check"></i> Création d'Agent IA pour automatiser des taches dans vos projets</li>
+                    </ul>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mon parcours</span>
+                <h2 class="section-title">Expérience Professionnelle</h2>
+                <p class="section-description">
+                    Un parcours dédié à l'excellence technique et à l'innovation digitale
+                </p>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-date">2025 - Présent</div>
+                    <div class="timeline-content">
+                        <h3>Freelance web Developer & UI Designer</h3>
+                        <p class="timeline-company">Indépendant - Lomé, Togo</p>
+                        <ul>
+                            <li>Conception et développement d'applications web sur-mesure pour clients internationaux</li>
+                            <li>Optimisation de l'expérience utilisateur sur +15 projets digitaux</li>
+                            <li>Collaboration avec des startups pour le prototypage rapide de leurs produits</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-date">2024 - 2025</div>
+                    <div class="timeline-content">
+                        <h3>Développeur Frontend</h3>
+                        <p class="timeline-company">Startup Tech - Clinica</p>
+                        <ul>
+                            <li>Création d'interfaces utilisateur responsive avec Html, css et javascript</li>
+                            <li>Collaboration étroite avec l'équipe design pour le prototypage</li>
+                            <li>Optimisation des performances des applications web</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Education -->
+            <div class="education-section">
+                <h3 class="education-title">Formation & Certifications</h3>
+                <div class="education-grid">
+                    <div class="education-card">
+                        <h4>Licence en Informatique</h4>
+                        <p class="education-school">Université d'UCAO uut</p>
+                        <p class="education-year">2024 - 2027</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>Baccaloréat</h4>
+                        <p class="education-school">Collège protestant Lomé/togo agbalépédogan</p>
+                        <p class="education-year">2023</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>B.E.P.C</h4>
+                        <p class="education-school">CPL- EL Shaddai lomé/togo</p>
+                        <p class="education-year">2020</p>
+                    </div>
+                    <div class="education-card">
+                        <h4>C.E.P.D</h4>
+                        <p class="education-school">CPL- DONGOYO kara/togo</p>
+                        <p class="education-year">2020</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Mes réalisations</span>
+                <h2 class="section-title">Projets Récents</h2>
+                <p class="section-description">
+                    Découvrez une sélection de mes projets les plus significatifs
+                </p>
+            </div>
+            
+            <!-- Portfolio Filter -->
+            <div class="portfolio-filter">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Développement Web</button>
+                <button class="filter-btn" data-filter="web">Développement d'applications Web</button>
+                <button class="filter-btn" data-filter="design">Développement web + IA</button>
+            </div>
+            
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="web design">
+                    <div class="project-image">
+                        <img src="data.jpeg" alt="DataAnalysis.ai">
+                        <div class="project-overlay">
+                            <a href="https://alfred-bit-co.github.io/DataAnalys.AI/" class="project-link" aria-label="Voir le projet DataAnalysis.ai">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Application Web + IA</span>
+                        <h3>DataAnalysis.ai</h3>
+                        <p>Plateforme complète d'analyse de données avec interface utilisateur intuitive et visualisation interactive</p>
+                        <div class="project-tech">
+                            <span>html</span>
+                            <span>css</span>
+                            <span>javascript</span>
+                            span>mySql</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="shine.jpeg" alt="E-commerce">
+                        <div class="project-overlay">
+                            <a href="https://alfred-bit-co.github.io/boutique-E-commerce/" class="project-link" aria-label="Voir le projet E-commerce">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">E-commerce</span>
+                        <h3>Boutique en Ligne Premium</h3>
+                        <p>Site e-commerce complet avec gestion des stocks, paiement sécurisé et dashboard admin</p>
+                        <div class="project-tech">
+                            <span>html</span>
+                            <span>css</span>
+                            <span>javascript</span>
+                            <span>mySql</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card" data-category="design">
+                    <div class="project-image">
+                        <img src="plan.jpeg" alt="Bussiness plan">
+                        <div class="project-overlay">
+                            <a href="https://alfred-bit-co.github.io/Business-Plan/" class="project-link" aria-label="Voir le projet Bussiness plan">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Bussiness Plan</span>
+                        <h3>Création d'un Business Plan</h3>
+                        <p>Conception et réalisation d'un business plan complet pour une entreprise de services</p>
+                        <div class="project-tech">
+                            <span>html</span>
+                            <span>css</span>
+                            <span>javascript</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card" data-category="web">
+                    <div class="project-image">
+                        <img src="épices.jpeg" alt="Site épicerie">
+                        <div class="project-overlay">
+                            <a href="https://alfred-bit-co.github.io/boutique-piceries/" class="project-link" aria-label="Voir le projet Site Épicerie">
+                                <i data-lucide="external-link"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Site Vitrine</span>
+                        <h3>Épicerie Élégante</h3>
+                        <p>Site vitrine haute gamme avec galerie de produits et système de réservation en ligne</p>
+                        <div class="project-tech">
+                            <span>HTML/CSS</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                        </div>
+                    </div>
+                </div>
+            <div class="portfolio-cta">
+                <p>Intéressé par plus de projets ?</p>
+                <a href="#contact" class="btn btn-primary">Discuter de mes projets</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Comment je travaille</span>
+                <h2 class="section-title">Mon Processus de Développement</h2>
+                <p class="section-description">
+                    Une méthodologie éprouvée pour garantir la réussite de chaque projet
+                </p>
+            </div>
+            
+            <div class="process-steps">
+                <div class="process-step">
+                    <div class="step-number">01</div>
+                    <div class="step-icon">
+                        <i data-lucide="search"></i>
+                    </div>
+                    <h3>Découverte</h3>
+                    <p>Analyse approfondie des besoins, objectifs et contraintes du projet.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">02</div>
+                    <div class="step-icon">
+                        <i data-lucide="layout"></i>
+                    </div>
+                    <h3>Conception</h3>
+                    <p>Création de wireframes, prototypes et design de l'interface utilisateur.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">03</div>
+                    <div class="step-icon">
+                        <i data-lucide="code"></i>
+                    </div>
+                    <h3>Développement</h3>
+                    <p>Implémentation technique avec les meilleures pratiques de codage.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="step-number">04</div>
+                    <div class="step-icon">
+                        <i data-lucide="check-circle"></i>
+                    </div>
+                    <h3>Livraison</h3>
+                    <p>Tests rigoureux, déploiement et suivi post-lancement.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <div class="section-header">
+                        <span class="section-subtitle">Travaillons ensemble</span>
+                        <h2 class="section-title">Parlons de votre projet</h2>
+                        <p class="section-description">
+                            Prêt à donner vie à votre idée ? Contactez-moi pour discuter de votre projet.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <a href="mailto:alfredayitou@gmail.com">alfredayitou@gmail.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div>
+                                <h4>Téléphone</h4>
+                                <a href="tel:+22872239076">+228 72 23 90 76</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div>
+                                <h4>Localisation</h4>
+                                <p>Lomé, Togo</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-socials">
+                        <p>Suivez-moi sur :</p>
+                        <div class="social-links">
+                            <a href="https://github.com/Alfred-bit-co" target="_blank" aria-label="GitHub">
+                                <i data-lucide="github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/" target="_blank" aria-label="LinkedIn">
+                                <i data-lucide="linkedin"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@sentinel_tokyo?is_from_webapp=1&sender_device=pc" target="_blank" aria-label="TikTok">
+                                <i data-lucide="tiktok"></i>
+                            </a>
+                            <a href="https://www.instagram.com/holy_alfred/" target="_blank" aria-label="Instagram">
+                                <i data-lucide="instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Nom Complet</label>
+                            <input type="text" id="name" name="name" required placeholder="Votre nom complet">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="votre@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Sujet</label>
+                            <input type="text" id="subject" name="subject" required placeholder="Sujet de votre message">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required rows="6" placeholder="Décrivez votre projet ou posez vos questions..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-lucide="send" style="margin-right: 8px;"></i>
+                            Envoyer le message
+                        </button>
+                        
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">A</div>
+                    <div>
+                        <h3>Alfred AYITOU</h3>
+                        <p>Développeur web Orienté IA & UI/UX Designer</p>
+                    </div>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#hero">Accueil</a></li>
+                        <li><a href="#about">À Propos</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-services">
+                    <h4>Services</h4>
+                    <ul>
+                        <li>Développement Web</li>
+                        <li>UI/UX Design</li>
+                        <li>Applications web + IA</li>
+                        <li>Consulting Tech</li>
+                        <li>Création d'Agent IA</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026 Alfred AYITOU. Tous droits réservés.</p>
+                <p>Développé avec <i data-lucide="heart" class="heart-icon"></i> et passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <a href="#hero" class="back-to-top" id="backToTop">
+        <i data-lucide="chevron-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
